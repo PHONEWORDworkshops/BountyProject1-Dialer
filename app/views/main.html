@@ -1,0 +1,52 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">PHONEWORD</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+      <input class="form-control" number ng-model="currentNumber.number" placeholder="Phone Number"></input>
+    </div>
+    <br />
+    <br />
+    <div class="col-md-4">
+      <table class="col-md-12">
+        <tr><td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('1', cheat);">1</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('2', cheat);">2</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('3', cheat);">3</a></td></tr>
+        <tr><td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('4', cheat);">4</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('5', cheat);">5</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('6', cheat);">6</a></td></tr>
+        <tr><td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('7', cheat);">7</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('8', cheat);">8</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('9', cheat);">9</a></td></tr>
+        <tr><td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('*', cheat);">*</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('0', cheat);">0</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="addChar('#', cheat);">#</a></td></tr>
+        <tr><td><a class="btn btn-default col-md-4 form-control" ng-click="">&nbsp;</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="call()">C</a></td>
+            <td><a class="btn btn-default col-md-4 form-control" ng-click="clear()">X</a></td></tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table">
+        <tr ng-repeat="m in matches">
+          <td>{{m.username}}</td>
+          <td>@</td>
+          <td>{{m.host}}</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+<div class="row marketing">
+  
+</div>
+
+<div class="footer">
+  
+</div>
